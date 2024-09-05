@@ -1,0 +1,76 @@
+* to open developer tools on chrome
+Ctrl+Alt+j
+right-click>>inspect>>console
+
+* basic operations
+alert, addition &subtraction, if statement to alert a string if true
+
+NOTE: PART1 JSFundamentals, VIDZ 3-9 missing
+* operators precedence (check MDN)
+
+* Strings using Template Literals: write strings in a normal way and insert variables without needing to concatenate
+* Type coercion: changes datatype to fit operation
+
+*to add emoji
+WINDOWS + .(period)
+
+* if, else statement
+// WHERE ? = condition
+//         : = else
+
+* approximate to one decimal number
+variableName.toFixed(decimalPlace)
+e.g markBMI.toFixed(1)
+//it returns a string, to convert back to number:-
+parseFloat(approxiimatededValue)
+
+* Type conversion and coercion
+conversion: manually convert dataTypes
+coercion: js automatically converts type behind the scene for us
+
+* NaN - typeof is a number, but an invalid number
+
+* truthy and Falsy values
+* equality operator and Boolean logic
+
+** NOTE: PART1 JSFundamentals, VIDZ 20 corrupted!!!
+
+*********
+PART2 JSFundamentals
+* ACTIVATE STRICT MODE
+first statement in your script
+'use strict'; 
+
+* Functions: reusable code blocks
+	Function Declaration
+	Function Expression
+	Arrow Function
+** ARRAY
+Array Methods:- indexOf() >> includes(), push(adds element to the END of array), unshift(add element from the BEGINNING of array), pop(removes element from the END of array), shift(remove element to the BEGINNING of array)
+
+** OBJECT
+* Dot vs Bracket Notation:- dele.lastName OR dele['lastName']
+* function attached to an object is called a METHOD.
+
+** LEARNING HOW TO CODE
+Have a clear goal
+Type yourself (say no to copy and paste)
+Use what you have learnt immediately
+Have the mindset of fixing problems
+
+** codewars.com
+* Problem-solving: - 
+Understand problem before trying to solve
+Break problem into smaller pieces
+Research (Google, StackOverflow, MDN)
+Write pseudo-codes
+
+* Debugging: -
+finding and fixing problems(bugs)
+IDENTIFY >> FIND >> FIX >> PREVENT REPETITION
+
+* console.warn
+ console.error
+ console.table(objectVariable): tabulates index and value
+GOTO >>Sources on chrome>> click js file>> set breakpoints to set where execution stops (clicking left part of numberings)
+* include 'debugger;' at breakpoint in code
