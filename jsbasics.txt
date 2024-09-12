@@ -1,5 +1,5 @@
 * to open developer tools on chrome
-Ctrl+Alt+j
+Ctrl+Shift+j
 right-click>>inspect>>console
 
 * basic operations
@@ -51,6 +51,7 @@ Array Methods:- indexOf() >> includes(), push(adds element to the END of array),
 ** OBJECT
 * Dot vs Bracket Notation:- dele.lastName OR dele['lastName']
 * function attached to an object is called a METHOD.
+* 
 
 ** LEARNING HOW TO CODE
 Have a clear goal

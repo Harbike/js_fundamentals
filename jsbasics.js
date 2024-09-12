@@ -68,7 +68,7 @@
 //         `);
 // }
 
-// Coding Challenge 3
+// Coding Challenge 3 (CALCULATING AVERAGE SCORES)
 // TEST DATA (DOLPHIN and KAOLAS)
 // const minimumScore = 100;
 // const firstGameDolphin = 96;
@@ -85,7 +85,7 @@
 // console.log(averageDolphin, averageKaola);
 // debugger;
 // // compare average to determine winner
-// (debugger;)
+// debugger;
 // if (averageDolphin > averageKaola && averageDolphin >= minimumScore) {
 //     console.log(`Team Dolphin wins!`);
 // } else if (averageDolphin > averageKaola && !(averageDolphin >= minimumScore)){
@@ -177,9 +177,92 @@ checkWinner(57, 116);
 // tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]), calcTip(bills[3]), calcTip(bills[4])];
 
 // bestFriend Selection
-const tunde = {
-    skinColor : 'Brown',
-    weight : '54g',
-    friends : ['Shade', 'Tola', 'Gbenga']
+// const tunde = {
+//     skinColor : 'Brown',
+//     weight : '54g',
+//     friends : ['Shade', 'Tola', 'Gbenga', 'Motun'],
+//     isQualified : false,
+//     license : function() {
+//         return `Tunde is a ${tunde.age}-year old ${tunde.job}, and he has ${this.isQualified ? "a driver's license" : "no driver's license"}`
+//     }
+// }
+// tunde.age = 45;
+// tunde.job = 'Engineer';
+
+// console.log(`Tunde has ${tunde.friends.length} friends, and his best friend is called ${tunde['friends'][0]}`);
+
+// console.log(tunde.license());
+
+
+// console.table(tunde);
+// console.warn(tunde);
+// console.error(tunde);
+
+// ITERATIONS - forLoop, whileLoop
+// const crates =  [85, 'Abimbola', 54, 41, false, 86, 75];
+// normal FOR loop
+// console.log(`Normal Loop`);
+
+// for (let egg = 0; egg < crates.length; egg++) {
+//     const content = crates[egg];
+//     const otherContent = new Array();
+//     otherContent.push(typeof content);
+//     console.log(content, otherContent);
+// }
+// continue: EXIT CURRENT ITRATION AND PROCEED WITH THE REST
+// break: TERMINATE THE LOOP
+
+// reverse loop
+// console.log(`
+//     Backward Loop`);
+// for (let egg = crates.length-1; egg >= 0; egg--) {
+//     const content = crates[egg];
+//     const otherContent = new Array();
+//     otherContent.push(typeof content);
+//     console.log(content, otherContent);
+// }
+
+// loop in a loop : writing a for loop twice(similar to forEach loop)
+
+// while loop: you can only specify the condition - which runs until the condition turns false.. the counter is declared outside the loop but usually you do not know how long the code would run
+// console.log(`
+//     WHILE LOOP`);
+
+// let egg = 0; 
+// while (egg < crates.length) {
+//     const content = crates[egg];
+//     const otherContent = new Array();
+//     otherContent.push(typeof content);
+//     console.log(content, otherContent);
+//     egg++;
+// }
+
+// let map = Math.trunc(Math.random() * 7);
+// let map = (Math.random() * 7).toFixed();
+// let map = parseFloat((Math.random() * 7).toFixed());
+// console.log(map, typeof map);
+
+// loops challenge
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52, 9000];
+let tipsAndTotals = new Array();
+let tot = 0;
+
+const calcTip = function () {
+    
+     for(let i = 0; i < bills.length; i++){
+        if (50 >= bills[i] <= 300){
+        tipsAndTotals[i] = ((15 / 100) * bills[i]);
+        tot += tipsAndTotals[i];
+        // tot = tot.push(tipsAndTotals[i]);
+        // keeps saying 'push' is not a function
+        console.log(tipsAndTotals, tot);        
+     } else{
+        console.log(`The tips is 20%!`);
+        tipsAndTotals[i] = ((20 / 100) * bills[i]);
+        tot += tipsAndTotals[i];
+        console.log(tipsAndTotals, tot);
+     }
+    //  else statement not responding
+    }
 }
-console.log(`Tunde has ${tunde.friends.length} friends, and his best friend is called ${tunde['friends'][0]}`);
+calcTip();
