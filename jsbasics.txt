@@ -1,11 +1,13 @@
 * to open developer tools on chrome
-Ctrl+Shift+j
+Ctrl+shift+j
 right-click>>inspect>>console
 
 * basic operations
 alert, addition &subtraction, if statement to alert a string if true
 
-NOTE: PART1 JSFundamentals, VIDZ 3-9 missing
+NOTE: PART1 JSFundamentals, VIDZ 3-9 missing >> RESOLVED
+* vid 3 - INTRO TO JavaScript
+-- ES6: ECMAScript
 * operators precedence (check MDN)
 
 * Strings using Template Literals: write strings in a normal way and insert variables without needing to concatenate
@@ -14,6 +16,7 @@ NOTE: PART1 JSFundamentals, VIDZ 3-9 missing
 *to add emoji
 WINDOWS + .(period)
 
+* CONTROL STRUCTURES:- if else statement, loops
 * if, else statement
 // WHERE ? = condition
 //         : = else
@@ -33,7 +36,27 @@ coercion: js automatically converts type behind the scene for us
 * truthy and Falsy values
 * equality operator and Boolean logic
 
-** NOTE: PART1 JSFundamentals, VIDZ 20 corrupted!!!
+** NOTE: PART1 JSFundamentals, VIDZ 20 corrupted!!! 
+
+* 21 - SWITCH STATEMENT
+>> switch(variable){
+	case "value":
+	console.log(`lorem jisdk ajuid`);
+	break;
+	default:
+	console.log(`never!`);
+>> }
+
+* 22 STATEMENTS and EXPRESSIONS
+-- expressions produce a value, could be a random "3-4" (could be referred to as WORDS)
+-- statements; a bigger piece of code, do not produce a value on its own (could be referred to as a SENTENCE)
+
+* 23 Conditional (Ternary) Operator
+condition ? action code : else code 
+
+* 25 JS Releases
+DURING DEVELOPMENT: use latest browser
+DURING PRODUCTION: use Babel to transpile and polyfill code (this converts back to ES5 to ensure browser compatibility for all users)
 
 *********
 PART2 JSFundamentals
@@ -46,12 +69,26 @@ first statement in your script
 	Function Expression
 	Arrow Function
 ** ARRAY
-Array Methods:- indexOf() >> includes(), push(adds element to the END of array), unshift(add element from the BEGINNING of array), pop(removes element from the END of array), shift(remove element to the BEGINNING of array)
+Array Methods:- indexOf() >> includes(), push(adds element to the END of array), unshift(add element to the BEGINNING of array), pop(removes element from the END of array), shift(remove element from the BEGINNING of array)
 
 ** OBJECT
 * Dot vs Bracket Notation:- dele.lastName OR dele['lastName']
 * function attached to an object is called a METHOD.
-* 
+* 'this' keyword
+
+** Challenge 15
+* ITERATION (LOOPS)
+// for loop - contains a counter, a condition and updateCounter(increase/decrease)
+* // continue: EXIT CURRENT ITRATION AND PROCEED WITH THE REST
+// break: TERMINATE THE LOOP
+* Backward Loops and Loops in Loops
+* Loop in a loop (similar to forEach loop)
+* // while loop: you can only specify the condition.. the counter is declared outside the loop
+
+** Math.random() - generates diff. numbers between 0 and 1
+
+
+
 
 ** LEARNING HOW TO CODE
 Have a clear goal
@@ -75,3 +112,14 @@ IDENTIFY >> FIND >> FIX >> PREVENT REPETITION
  console.table(objectVariable): tabulates index and value
 GOTO >>Sources on chrome>> click js file>> set breakpoints to set where execution stops (clicking left part of numberings)
 * include 'debugger;' at breakpoint in code
+
+*******
+7. JavaScript in the Browser DOM and Events Fundamentals
+MODAL WINDOW
+PSHack: <button>&times;</button>
+
+
+
+
+use map instead of forEach
+favicon.cc - create your favicon

@@ -101,4 +101,27 @@ if(language2 == 'English' && population2 == 50000000 && country2 !== isIsland){
     console.log(`${country2} does not meet your criteria 🥺`);
 }
 
-//LECTURE - The Switch Statement
+//LECTURE - The Switch Statement; note it is case sensitive
+switch (language2) {
+    case "Chinese":
+    case "Mandarin":
+        console.log(`MOST number of native speakers`);
+        break;
+    case "Spanish":
+        console.log(`2nd place in number of native speakers`);
+        break;
+    case "English":
+        console.log(`3rd place`);
+        break;
+    case "Hindi":
+        console.log(`Number 4`);
+        break;
+    case "Arabic":
+        console.log(`5th most spoken language`);
+        break;
+    default:
+        console.log(`Great language too 😁`);
+}
+
+//LECTURE - The Conditional (Ternary) Operator
+myPopulation > 30000000 ? console.log(`${myCountry}'s population is above average`) : console.log(`${myCountry}'s population is below average`);
