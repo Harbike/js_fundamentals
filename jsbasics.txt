@@ -117,7 +117,11 @@ GOTO >>Sources on chrome>> click js file>> set breakpoints to set where executio
 7. JavaScript in the Browser DOM and Events Fundamentals
 MODAL WINDOW
 PSHack: <button>&times;</button>
+//   CHALLENGES
+//  at the output stage, notice usage of += keeps existing pane, causing closePane to malfunction
 
+// closePane = document.querySelector(".modal_close-btn") >>> setting closePane = closeBtn fails, having same call target '.modal_close-btn'
+// thoughtProc -- '.modal_close-btn' no longer exist outside fetch
 
 
 

@@ -40,7 +40,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    /* height: 500px; */
     max-height: 100%;
     background-color: #fff;
     padding: 1rem 2rem;
@@ -50,15 +49,16 @@
     & h1{
         text-align: center;
         font-size: 1.8rem;
-        padding: 1.5rem 1rem;
+        padding: .7rem 0;
     }
     & p{
         line-height: 1.2;
+        padding: .5rem 0;
     }
 
     & .modal_close-btn{
        font-size: 2rem;
-       padding: .2rem .8rem;
+       padding: .1rem .8rem;
        align-self: flex-end;
         border: none;
         background-color: transparent;
