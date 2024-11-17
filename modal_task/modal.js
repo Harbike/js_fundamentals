@@ -18,7 +18,7 @@ fetch("report.json")
       paneContent = report[index];
 
       btn.addEventListener("click", () => {
-        console.log(`help`); 
+        console.log(`help`);
 
         output = `
         <div class="blurry"></div>
@@ -32,16 +32,15 @@ fetch("report.json")
         modal.innerHTML = output;
 
         closePane = document.querySelector(".modal_close-btn");
-        closePane.addEventListener('click', () => {
-            modal.innerHTML = '';
-        // console.log(`done`);
-
+        closePane.addEventListener("click", () => {
+          modal.innerHTML = "";
+          // console.log(`done`);
         });
       });
     });
-  });
-
-
+})
+.catch((error) => console.log(`Error fetching contents: ${error}`));
+  
 //   challenges
 //  at the output stage, notice usage of += keeps existing pane, causing closePane to malfunction
 
