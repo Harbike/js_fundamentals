@@ -123,6 +123,9 @@ PSHack: <button>&times;</button>
 // closePane = document.querySelector(".modal_close-btn") >>> setting closePane = closeBtn fails, having same call target '.modal_close-btn'
 // thoughtProc -- '.modal_close-btn' no longer exist outside fetch
 
+// 'keypress' is outdated, use 'keydown' instead
+
+PIG GAME
 
 
 use map instead of forEach

@@ -7,7 +7,6 @@ const paragraph = document.querySelector(".paragraph");
 const closeBtn = document.querySelector(".modal_close-btn");
 const blurPane = document.querySelector(".blurry");
 
-// others
 
 let output = "";
 fetch("report.json")
@@ -31,16 +30,27 @@ fetch("report.json")
         `;
         modal.innerHTML = output;
 
+        // close pane
         closePane = document.querySelector(".modal_close-btn");
         closePane.addEventListener("click", () => {
           modal.innerHTML = "";
-          // console.log(`done`);
+        });
+
+        // escape key
+        document.addEventListener("keydown", (esc) => {
+          // console.log(esc.key);
+          if (esc.key === "Escape") {
+            console.log(`boom!`);
+            modal.innerHTML = "";
+          } else {
+            console.log(`error somewhere`);
+          }
         });
       });
     });
-})
-.catch((error) => console.log(`Error fetching contents: ${error}`));
-  
+  })
+  .catch((error) => console.log(`Error fetching contents: ${error}`));
+
 //   challenges
 //  at the output stage, notice usage of += keeps existing pane, causing closePane to malfunction
 
