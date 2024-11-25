@@ -12,7 +12,7 @@
     <div class="players">
         <div class="player_one">
             <p class="player-name">player 1</p>
-            <p class="player_reading-score">0</p>
+            <p class="player_reading-score total_score-one">0</p>
 
             <div class="current">
                 <p class="sm-font">current</p>
@@ -22,7 +22,7 @@
 
         <div class="player_two">
             <p class="player-name">player 2</p>
-            <p class="player_reading-score">0</p>
+            <p class="player_reading-score total_score-two">0</p>
 
             <div class="current">
                 <p class="sm-font">current</p>
@@ -31,14 +31,22 @@
         </div>
 
         <div class="menu">
-            <button class="game_new option">🔃 New Game</button>
-            
+            <button class="game_new option-btn">🔃 New Game</button>
+            <div class="menu-mid dices">
+                <img src="./diceSVG/dice-1.svg" class="dice hidden" alt="one" aria-valuetext="1">
+                <img src="./diceSVG/dice-2.svg" class="dice hidden" alt="two" aria-valuetext="2">
+                <img src="./diceSVG/dice-3.svg" class="dice hidden" alt="three" aria-valuetext="3">
+                <img src="./diceSVG/dice-4.svg" class="dice hidden" alt="four" aria-valuetext="4">
+                <img src="./diceSVG/dice-5.svg" class="dice hidden" alt="five" aria-valuetext="5">
+                <img src="./diceSVG/dice-6.svg" class="dice hidden" alt="six" aria-valuetext="6">
+            </div>
             <div class="menu-bottom">
-
-                <button class="game_roll option">🎲 Roll Dice</button>
-                <button class="game_pause option">⏸️ Hold</button>
+                <button class="game_roll option-btn">🎲 Roll Dice</button>
+                <button class="game_pause option-btn">⏸️ Hold</button>
             </div>
         </div>
     </div>
+
+    <script src="pig.js"></script>
 </body>
 </html>

@@ -68,24 +68,50 @@ margin-top: 8rem;
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 1.2rem 0;
 }
+.option-btn {
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .3rem .5rem;
+    border: none;
+    border-radius: 50px;
+}
+.option-btn:active {
+    background-color: #e2a6c0e8;
+    color: #fff;
+}
+
+.menu-mid {
+    position: relative;
+    display: flex;
+}
+.dice {
+    border-radius: 20px;
+    width: 80px;
+}
+.game_new{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .menu-bottom {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.option {
-    text-transform: uppercase;
-    font-size: .7rem;
-    padding: .3rem .5rem;
-    border: none;
-    border-radius: 50px;
-    letter-spacing: .001rem;
-}
+
+
+
+
+
 
 
 .sm-font {
     font-size: .5rem;
+}
+.hidden {
+    display: none;
 }
