@@ -27,7 +27,7 @@
     text-transform: uppercase;
 }
 .player_one {
-    background-color: #e2a6c0e8;
+    background-color:   #ad6083e0;
     border-radius: 8px 0 0 8px;
 }
 .player_two {
@@ -40,7 +40,7 @@
     padding: .7rem 0;
     letter-spacing: .1rem;
 }
-.player_reading-score {
+.player_held-score {
     font-size: 4rem;
     color: rgb(206, 59, 59);
     margin-bottom: 2rem;
@@ -115,3 +115,6 @@ margin-top: 8rem;
 .hidden {
     display: none;
 }
+.active {
+    background-color: #e2a6c0e8;
+  }
