@@ -67,11 +67,12 @@ function updateTotalScores() {
   document.querySelector(
     `.player_current-score-${activePlayer}`
   ).textContent = currentScore[activePlayer];
-  
+
   heldScore[activePlayer] += currentScore[activePlayer];
 
   currentScore[activePlayer] = 0;
 }
+
 rollDice.addEventListener("click", () => {
   const randomDiceRoll = Math.floor(Math.random() * 6);
   const displayDice = dices[randomDiceRoll];
@@ -121,7 +122,7 @@ rollDice.addEventListener("click", () => {
   displayDice.classList.remove("hidden");
 });
 
-// // when holdGame is clicked
+// when holdGame is clicked
 holdGame.addEventListener("click", () => {
   totalHeldScores.forEach(() => {
     if (activePlayer === 0) {   
@@ -148,6 +149,3 @@ holdGame.addEventListener("click", () => {
   switchPlayer();
 
 });
-
-// set current to zero when player is switched -- done
-// add current to sumtotal when hold is clicked

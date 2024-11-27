@@ -76,6 +76,7 @@ margin-top: 8rem;
     text-transform: uppercase;
     font-size: .8rem;
     padding: .3rem .5rem;
+    background-color: rgba(255, 255, 255, 0.653);
     border: none;
     border-radius: 50px;
 }
@@ -116,5 +117,5 @@ margin-top: 8rem;
     display: none;
 }
 .active {
-    background-color: #e2a6c0e8;
+    background-color: #3e373ae8;
   }
