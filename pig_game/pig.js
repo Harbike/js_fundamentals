@@ -16,6 +16,7 @@ const dices = document.querySelectorAll(".dice");
 
 // player 1 starts game >> a listener to note turns
 let activePlayer = 0;
+const highestScore = 30;
 
 // on window load
 window.onload = function () {
@@ -143,9 +144,15 @@ holdGame.addEventListener("click", () => {
       document.querySelector(
         `.player_current-score-${activePlayer}`
       ).textContent = currentScore[activePlayer];
-      
     }
   });
+  if (heldScore[activePlayer] >= highestScore) {
+    if (activePlayer == 0) {
+    alert(`Player one wins!`);
+    } else {
+    alert(`Player two wins!`);
+    }
+    startNewGame();
+   }
   switchPlayer();
-
 });
