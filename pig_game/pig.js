@@ -14,6 +14,12 @@ const rollDice = document.querySelector(".game_roll");
 const holdGame = document.querySelector(".game_pause");
 const dices = document.querySelectorAll(".dice");
 
+const paragraph = document.querySelector(".paragraph");
+const blurry = document.querySelector(".blurry");
+const modal = document.querySelector(".modal");
+const modalCloseBtn = document.querySelector(".modal_close-btn");
+
+
 // player 1 starts game >> a listener to note turns
 let activePlayer = 0;
 const highestScore = 30;
@@ -123,9 +129,30 @@ rollDice.addEventListener("click", () => {
   displayDice.classList.remove("hidden");
 });
 
+// close popped modal
+function closeModal() {
+  modal.classList.add('hidden');
+  blurry.classList.add('hidden');
+}
 // when holdGame is clicked
 holdGame.addEventListener("click", () => {
   totalHeldScores.forEach(() => {
+    if (heldScore[activePlayer] >= highestScore) {
+      if (activePlayer == 0) {
+      modal.classList.remove('hidden');
+      blurry.classList.remove('hidden');
+      paragraph.textContent = 'Player one wins! Congratulations'
+      } else {
+      modal.classList.remove('hidden');
+      blurry.classList.remove('hidden');
+      paragraph.textContent = 'Player two wins! Congratulations'
+      }
+      modalCloseBtn.addEventListener('click', () => {
+        closeModal();
+        startNewGame();
+       });
+     }
+
     if (activePlayer === 0) {   
       document.querySelector(
        `.total_score-${activePlayer}`
@@ -146,13 +173,5 @@ holdGame.addEventListener("click", () => {
       ).textContent = currentScore[activePlayer];
     }
   });
-  if (heldScore[activePlayer] >= highestScore) {
-    if (activePlayer == 0) {
-    alert(`Player one wins!`);
-    } else {
-    alert(`Player two wins!`);
-    }
-    startNewGame();
-   }
   switchPlayer();
 });
